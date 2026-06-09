@@ -63,15 +63,18 @@ variable "storage_blob_dns_zone_id" {
 }
 
 variable "storage_queue_dns_zone_id" {
-  type = string
+  type    = string
+  default = null
 }
 
 variable "storage_table_dns_zone_id" {
-  type = string
+  type    = string
+  default = null
 }
 
 variable "storage_file_dns_zone_id" {
-  type = string
+  type    = string
+  default = null
 }
 
 variable "document_intelligence_id" {

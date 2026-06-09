@@ -14,3 +14,7 @@ output "public_ip_fqdn" {
   value = azurerm_public_ip.main.fqdn
 }
 
+output "principal_id" {
+  value = azurerm_application_gateway.main.identity[0].principal_id
+}
+
